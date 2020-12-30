@@ -189,7 +189,7 @@ public class Main {
             }
 
             //20 21 22
-            if (satir == 2 && sutun=='0') {
+            if (satir == 2 && sutun== 0) {
                 if (panel[satir][sutun + 1] == 'O' && panel[satir][sutun + 2] == 'S') {
                     puan++;
                 }
