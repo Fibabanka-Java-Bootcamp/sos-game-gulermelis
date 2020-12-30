@@ -113,7 +113,7 @@ public class Main {
           //  System.out.println("eklenen" +addPoint);
           //  System.out.println("eski puan: " +Main.firtPlayerPoint);
             Main.firtPlayerPoint += addPoint;
-            status = addPoint >0  && panelIsFull(panel, boyut)!= true? true : false;
+            status = addPoint >0  && panelIsFull(panel, boyut)== true? true : false;
 
         } while (status);
         tableScor(Main.firtPlayerPoint, Main.secondPlayerPoint);
@@ -123,6 +123,7 @@ public class Main {
         boolean status;
         Scanner scan = new Scanner(System.in);
         do {
+            System.out.println("2.Oyuncu");
             System.out.println("Girmek istediğiniz kutunun satır ve sütun numarasını giriniz:");
             int satir = scan.nextInt();
             int sutun = scan.nextInt();
